@@ -46,7 +46,7 @@ nano cookies.txt
 ### 6. Run Script
 
 ```bash
-python3 dist/user_monitor_simple.py
+python3 user_monitor_simple.py
 ```
 
 Enter your Chat ID when prompted.
@@ -76,7 +76,7 @@ pkg install python git
 git clone https://github.com/rusty10019/monitor.git
 cd monitor
 pip install -r requirements.txt
-python3 dist/user_monitor_simple.py
+python3 user_monitor_simple.py
 ```
 
 ### Keep Running in Background
@@ -85,11 +85,11 @@ python3 dist/user_monitor_simple.py
 # Option 1: tmux
 pkg install tmux
 tmux new -s monitor
-python3 dist/user_monitor_simple.py
+python3 user_monitor_simple.py
 # Detach: Ctrl+B, then D
 
 # Option 2: nohup
-nohup python3 dist/user_monitor_simple.py &
+nohup python3 user_monitor_simple.py &
 ```
 
 ---
@@ -104,8 +104,8 @@ nohup python3 dist/user_monitor_simple.py &
 ## 💻 Supported Platforms
 
 - ✅ Linux (Termux/Android)
-- ✅ Windows (coming soon - use Linux version for now)
-- ✅ Mac (coming soon - use Linux version for now)
+- ✅ Windows
+- ✅ Mac
 
 ---
 
@@ -121,7 +121,7 @@ Get fresh cookies from SHEIN (they expire)
 Check your Chat ID is correct (numbers only)
 
 ### Script stops when terminal closes
-Run in background: `nohup python3 dist/user_monitor_simple.py &`
+Run in background: `nohup python3 user_monitor_simple.py &`
 
 ---
 
@@ -130,7 +130,7 @@ Run in background: `nohup python3 dist/user_monitor_simple.py &`
 - ✅ Runs on YOUR device
 - ✅ Uses YOUR cookies
 - ✅ Uses YOUR IP
-- ✅ Code is encrypted for security
+- ✅ Open source code
 
 ---
 
