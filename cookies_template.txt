@@ -1,0 +1,19 @@
+# SHEIN Cookies Template
+# 
+# Replace this with your actual cookies from SHEIN website
+# 
+# How to get your cookies:
+# 1. Open https://www.sheinindia.in/ in browser
+# 2. Login to your account
+# 3. Press F12 (DevTools)
+# 4. Go to Network tab
+# 5. Refresh page (F5)
+# 6. Click any request to sheinindia.in
+# 7. Find "Cookie" header in Request Headers
+# 8. Copy the entire cookie string
+# 9. Paste below (replace this text)
+#
+# Example format:
+# A=abc123; B=def456; sessionid=xyz789; ...
+#
+# After pasting, rename this file to: cookies.txt
