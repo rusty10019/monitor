@@ -15,11 +15,8 @@ from datetime import datetime
 # CONFIGURATION
 # ============================================
 
-# Bot Token (get from @BotFather)
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
-
-# Your Telegram Chat ID (get from bot)
-USER_CHAT_ID = None  # Will be set when you run the script
+# Bot configuration
+BOT_TOKEN = "8548444304:AAHeFjaEAysv46Is4ebTDF2XWHCsJqDiQAk"
 
 # Cookies file (user creates this)
 COOKIES_FILE = "cookies.txt"
