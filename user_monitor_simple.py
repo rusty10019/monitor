@@ -10,13 +10,27 @@ import time
 import os
 import logging
 from datetime import datetime
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # ============================================
 # CONFIGURATION
 # ============================================
 
-# Bot configuration
-BOT_TOKEN = "8548444304:AAHeFjaEAysv46Is4ebTDF2XWHCsJqDiQAk"
+# Bot Token - Load from .env file
+BOT_TOKEN = os.getenv('BOT_TOKEN')
+
+if not BOT_TOKEN or BOT_TOKEN == "YOUR_BOT_TOKEN_HERE":
+    print("❌ ERROR: Bot token not configured!")
+    print("")
+    print("Please create a .env file with your bot token:")
+    print("1. Copy .env.example to .env")
+    print("2. Edit .env and add your bot token")
+    print("3. Get token from @BotFather on Telegram")
+    print("")
+    exit(1)
 
 # Cookies file (user creates this)
 COOKIES_FILE = "cookies.txt"

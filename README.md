@@ -13,13 +13,40 @@ git clone https://github.com/rusty10019/monitor.git
 cd monitor
 ```
 
-### 2. Install Requirements
+### 2. Create Your Own Bot
+
+1. Open Telegram
+2. Search: **@BotFather**
+3. Send: `/newbot`
+4. Choose a name (e.g., "My SHEIN Monitor")
+5. Choose a username (e.g., "myshein_bot")
+6. Copy the bot token
+
+### 3. Configure Bot Token
+
+```bash
+nano user_monitor_simple.py
+```
+
+Find this line:
+```python
+BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
+```
+
+Replace with your token:
+```python
+BOT_TOKEN = "123456789:ABCdefGHIjklMNOpqrsTUVwxyz"
+```
+
+Save: `Ctrl+X`, `Y`, `Enter`
+
+### 4. Install Requirements
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Get Your SHEIN Cookies
+### 5. Get Your SHEIN Cookies
 
 1. Open https://www.sheinindia.in/ in browser
 2. Login to your account
@@ -28,7 +55,7 @@ pip install -r requirements.txt
 5. Click any request → Find **Cookie** header
 6. Copy the entire cookie string
 
-### 4. Create cookies.txt
+### 6. Create cookies.txt
 
 ```bash
 nano cookies.txt
@@ -36,14 +63,16 @@ nano cookies.txt
 # Save: Ctrl+X, Y, Enter
 ```
 
-### 5. Get Your Chat ID
+### 7. Get Your Chat ID
 
 1. Open Telegram
-2. Search: **@sheinnalerttbot**
+2. Search for YOUR bot (the one you created)
 3. Send: `/start`
-4. Bot will show your Chat ID
+4. Send any message
+5. Go to: `https://api.telegram.org/botYOUR_BOT_TOKEN/getUpdates`
+6. Find your Chat ID in the response
 
-### 6. Run Script
+### 8. Run Script
 
 ```bash
 python3 user_monitor_simple.py

@@ -2,6 +2,7 @@
 cookies.txt
 notification_count.json
 monitor.log
+.env
 
 # Python
 __pycache__/
