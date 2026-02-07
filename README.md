@@ -101,6 +101,12 @@ nohup python3 dist/user_monitor_simple.py &
 - SHEIN account with wishlist
 - Telegram account
 
+## 💻 Supported Platforms
+
+- ✅ Linux (Termux/Android)
+- ✅ Windows (coming soon - use Linux version for now)
+- ✅ Mac (coming soon - use Linux version for now)
+
 ---
 
 ## ❓ Troubleshooting
